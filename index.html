@@ -1,6 +1,22 @@
 <html>
+    <style type="text/css">
+        @keyframes blink {
+            50% {
+                opacity: 0.0;
+            }
+        }
+        @-webkit-keyframes blink {
+            50% {
+                opacity: 0.0;
+            }
+        }
+        .blink {
+            animation: blink 1s step-start 0s infinite;
+            -webkit-animation: blink 1s step-start 0s infinite;
+        }
+    </style>
 <body style="background-image:url('./stars.gif')">
-    <h1 style="font-size: 80px;">THIS IS THE PARTY</h1>
+    <h1 class="blink" style="font-size: 80px;">THIS IS THE PARTY</h1>
     <marquee>
       <img width="400px" src="kevin.jpg" />
       <br />
