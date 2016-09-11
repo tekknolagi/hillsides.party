@@ -1,17 +1,21 @@
 <html>
     <h1>THIS IS THE PARTY</h1>
     <marquee>
-    <blink>HILLSIDES 370s BITCH</blink>
-    <img width="400px" src="kevin.jpg" />
+      <img width="400px" src="kevin.jpg" />
+      <br />
+      <div id="color-change">HILLSIDES 370s BITCH</div>
     </marquee>
 
-    <script type="text/javascript">
-      var colors = ["blue", "red", "green"];
-      var index = 0;
-      setInterval(500, function () {
-          var color_change = document.getElementById("color-change");
-          index += 1;
-          color_change.style.color = colors[index % colors.length];
-      });
+    <script type="text/javascript" src="jquery.js"></script>
+    <script>
+$(document).ready(function() {
+    window.colors = ["blue", "red", "green"];
+    window.index = 0;
+    setInterval(function () {
+        var color_change = document.getElementById("color-change");
+        index += 1;
+        color_change.style.color = colors[index % colors.length];
+    }, 500);
+});
     </script>
 </html>
