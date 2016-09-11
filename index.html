@@ -1,0 +1,17 @@
+<html>
+    <h1>THIS IS THE PARTY</h1>
+    <marquee>
+    <blink>HILLSIDES 370s BITCH</blink>
+    <img width="400px" src="kevin.jpg" />
+    </marquee>
+
+    <script type="text/javascript">
+      var colors = ["blue", "red", "green"];
+      var index = 0;
+      setInterval(500, function () {
+          var color_change = document.getElementById("color-change");
+          index += 1;
+          color_change.style.color = colors[index % colors.length];
+      });
+    </script>
+</html>
